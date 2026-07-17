@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #f6f9fc;
+    color: #1e293b;
+    line-height: 1.6;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px 50px;
+    border-radius: 24px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.06);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: #475569;
+    margin-top: 4px;
+}
+
+.contacts {
+    font-size: 15px;
+    color: #64748b;
+    margin-top: 10px;
+}
+
+.contacts a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.contacts a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e2e8f0;
+    margin: 30px 0;
+}
+
+section {
+    margin: 30px 0;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #0f172a;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 4px;
+    color: #0f172a;
+}
+
+p {
+    margin: 6px 0;
+    color: #334155;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 6px;
+}
+
+.tag {
+    background: #eef2ff;
+    color: #1e293b;
+    padding: 6px 16px;
+    border-radius: 40px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.project {
+    background: #f8fafc;
+    padding: 20px 24px;
+    border-radius: 16px;
+    margin: 20px 0;
+    border-left: 4px solid #2563eb;
+}
+
+/* Стили для ярких кнопок в проектах */
+.project .links {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.project .links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 22px;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    border: none;
+    cursor: pointer;
+}
+
+/* Основная кнопка — синяя (презентации, скриншоты) */
+.project .links a:not(.doc-link) {
+    background: #2563eb;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.30);
+}
+
+.project .links a:not(.doc-link):hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.40);
+}
+
+/* Зелёная кнопка для актов внедрения и важных документов */
+.project .links a.doc-link,
+.screenshots .doc-link {
+    background: #16a34a;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(22, 163, 74, 0.30);
+}
+
+.project .links a.doc-link:hover,
+.screenshots .doc-link:hover {
+    background: #15803d;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(22, 163, 74, 0.40);
+}
+
+/* Кнопки в галерее (скриншоты и документы) */
+.screenshots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 14px;
+    align-items: flex-start;
+}
+
+.screenshots a {
+    display: block;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: #fff;
+    flex: 1 1 300px;
+    max-width: 100%;
+}
+
+.screenshots a:hover {
+    transform: scale(1.01);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.10);
+}
+
+.screenshots img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+    background: #f8fafc;
+}
+
+/* Ссылки-документы внутри галереи (кнопки) */
+.screenshots .doc-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 22px;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    background: #16a34a;
+    color: #ffffff;
+    border: none;
+    box-shadow: 0 4px 12px rgba(22, 163, 74, 0.30);
+    transition: all 0.25s ease;
+    flex: 0 1 auto;
+}
+
+.screenshots .doc-link:hover {
+    background: #15803d;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(22, 163, 74, 0.40);
+}
+/* Стили для галереи скриншотов — УВЕЛИЧЕННЫЙ ВАРИАНТ */
+.screenshots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 16px;
+    justify-content: flex-start;
+}
+
+.screenshots a {
+    display: block;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: #fff;
+    flex: 1 1 300px; /* Картинки будут занимать минимум 300px и растягиваться */
+    max-width: 100%;
+}
+
+.screenshots a:hover {
+    transform: scale(1.01);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.10);
+}
+
+.screenshots img {
+    display: block;
+    width: 100%;          /* Растягиваем на всю ширину родителя */
+    height: auto;
+    max-height: 450px;    /* Увеличили максимальную высоту, чтобы картинка была большой */
+    object-fit: contain;  /* Чтобы картинка не обрезалась, а показывалась целиком */
+    background: #f8fafc;
+}
+
+/* Стиль для ссылок-документов в галерее (если они идут рядом с картинками) */
+.screenshots .doc-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #eef2ff;
+    border-radius: 40px;
+    color: #1e293b;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    border: 1px solid #e2e8f0;
+    transition: background 0.2s;
+    flex: 0 1 auto;
+}
+
+.screenshots .doc-link:hover {
+    background: #d9e2ff;
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+ul {
+    padding-left: 22px;
+    margin: 8px 0;
+}
+
+ul li {
+    margin: 6px 0;
+    color: #334155;
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    color: #94a3b8;
+    margin-top: 20px;
+}
+
+/* Адаптив для телефонов */
+@media (max-width: 640px) {
+    .container {
+        padding: 24px 18px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .subtitle {
+        font-size: 17px;
+    }
+
+    .screenshots img {
+        max-width: 100%;
+        max-height: 140px;
+    }
+}
